@@ -1,16 +1,2 @@
-.section-movies {
-  width: 85vw;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(4, 30rem);
-  margin: 0 auto;
-}
 
-.movie-container {
-  display: flex;
-  flex-direction: column;
-}
 
-.mov-img {
-  border-radius: 11px;
-}

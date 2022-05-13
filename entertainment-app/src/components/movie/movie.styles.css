@@ -1,0 +1,26 @@
+.movie-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-img {
+  width: 28rem;
+  height: 20rem;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.mov-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #999;
+}
+
+.movie-title {
+  font-size: 1.8rem;
+  color: #fff;
+}
