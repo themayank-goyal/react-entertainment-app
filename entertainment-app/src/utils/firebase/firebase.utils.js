@@ -49,7 +49,7 @@ export const createUserDocFromUserAuth = async (userAuth) => {
 export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
 
 export const bookmarkingFunc = async (userAuth, id) => {
-  const userRef = doc(db, 'users', userAuth.id);
+  const userRef = doc(db, 'user', userAuth.uid);
   const userSnap = await getDoc(userRef);
   console.log(userSnap);
 

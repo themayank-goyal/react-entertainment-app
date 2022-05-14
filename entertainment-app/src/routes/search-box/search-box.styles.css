@@ -1,9 +1,11 @@
 .search-box-container {
+  display: flex;
   width: 80%;
 }
 
 .search-icon {
   margin-right: 1rem;
+  margin-top: 1rem;
   font-size: 2rem;
   color: #fff;
 }
