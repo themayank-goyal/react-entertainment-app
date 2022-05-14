@@ -1,7 +1,10 @@
 import './search-box.styles.css';
 import { RiSearchLine } from 'react-icons/ri';
+import { useContext } from 'react';
+import { AppContext } from '../../context/app.context';
 
-const SearchBox = ({ handleSearch }) => {
+const SearchBox = () => {
+  const {handleSearch} = useContext(AppContext);
   return (
     <div className='search-box-container'>
       <RiSearchLine className='search-icon'/>

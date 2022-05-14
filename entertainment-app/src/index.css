@@ -16,7 +16,6 @@ html {
 }
 
 body {
-  display: flex;
   line-height: 1;  
   font-family: 'Outfit', sans-serif;
   -webkit-font-smoothing: antialiased;

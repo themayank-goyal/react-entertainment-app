@@ -1,13 +1,31 @@
 .movie-container {
+  position: relative;
   display: flex;
   flex-direction: column;
+  /* border: 2px solid yellow; */
+  justify-content: center;
+  align-items:center;
 }
+
+/* .movie-container::before {
+  content: url('../../assets/icon-play.svg');
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  transform: translate(-45%, -45%); 
+} */
 
 .movie-img {
   width: 28rem;
-  height: 20rem;
+  height: 18rem;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
+  transition: all 0.16s;
+}
+
+
+.movie-img:hover {
+  opacity: 0.5;
 }
 
 .mov-details {

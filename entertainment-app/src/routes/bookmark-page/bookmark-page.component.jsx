@@ -1,0 +1,26 @@
+import MovieList from '../../components/movie-list/movie-list.component';
+import SearchBox from '../search-box/search-box.component.jsx';
+import { useState, useEffect, useContext } from 'react';
+import { AppContext } from '../../context/app.context';
+
+const BookmarkPage = () => {
+  const { newFilterMovies, handleSearch } = useContext(AppContext);
+  const [bookmarkedMovies, setBookmarkedMovies] = useState(newFilterMovies);
+
+  useEffect(() => {
+    const newBookmarks = newFilterMovies.filter((movies) => {
+      return movies.isBookmarked === true;
+    });
+    setBookmarkedMovies(newBookmarks);
+  }, [newFilterMovies]);
+
+  return (
+    <div>
+      <SearchBox />
+      <MovieList filterMovies={bookmarkedMovies} />
+      );
+    </div>
+  );
+};
+
+export default BookmarkPage;

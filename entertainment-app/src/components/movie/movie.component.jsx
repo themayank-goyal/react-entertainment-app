@@ -1,11 +1,12 @@
 import Bookmark from '../bookmark/bookmark.component';
-import './movie.styles.css'
+import './movie.styles.css';
 
-const Movie = ({ movie }) => {
+const Movie = ({ movie, index}) => {
   return (
     <div className='movie-container'>
       <div>
-        <Bookmark movie={movie}/>
+        <Bookmark movie={movie} index={index} />
+
         <img
           className='movie-img'
           src={movie.thumbnail.regular.medium}
