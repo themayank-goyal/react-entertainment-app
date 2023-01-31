@@ -1,0 +1,28 @@
+.search-box-container {
+  display: flex;
+  width: 80%;
+}
+
+.search-icon {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.search-box {
+  font-family: inherit;
+  padding: 1rem 0;
+  width: 50rem;
+  border: none;
+  background-color: #10141e;
+  color: #666;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  margin-bottom: 4rem;
+}
+
+.search-box:focus {
+  outline: none;
+  box-shadow: #666 0px 2px 0px;
+}

@@ -1,0 +1,17 @@
+.style-flex{
+  padding: 2rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: 4rem;
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 52em) {
+  .style-flex{
+    grid-template-columns: 1fr;
+  }
+  .navbar-container{
+    width: 100%;
+  }
+}
